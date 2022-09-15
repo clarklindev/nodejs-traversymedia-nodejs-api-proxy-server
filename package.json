@@ -1,0 +1,32 @@
+{
+  "name": "api-proxy-server-start",
+  "version": "1.0.0",
+  "description": "CUSTOM NODE SERVER\r RATE LIMITING (requests limits)\r CACHEING",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradtraversy/node-api-proxy-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradtraversy/node-api-proxy-server/issues"
+  },
+  "homepage": "https://github.com/bradtraversy/node-api-proxy-server#readme",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.6.0",
+    "needle": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
