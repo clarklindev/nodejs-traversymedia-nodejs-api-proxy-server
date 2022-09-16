@@ -21,7 +21,7 @@ const fetchWeather = async (city) => {
 
   const displayData = {
     city: data.name,
-    temp: kelvinToFahrenheit(data.main.temp),
+    temp: data.main.temp//kelvinToFahrenheit(data.main.temp),
   }
 
   addWeatherToDOM(displayData)
@@ -31,7 +31,7 @@ const fetchWeather = async (city) => {
 const addWeatherToDOM = (data) => {
   weatherDisplay.innerHTML = `
     <h1>Weather in ${data.city}</h1>
-    <h2>${data.temp} &deg;F</h2>
+    <h2>${data.temp} &deg;C</h2>
   `
   cityInput.value = ''
 }
