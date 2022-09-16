@@ -38,7 +38,7 @@ const addWeatherToDOM = (data) => {
 
 // Convert Kelvin to Celsius
 const kelvinToCelsius = (temp) =>{
-  return temp - 273.15;
+  return Math.ceil(temp - 273.15);
 }
 
 // Convert Kelvin to Fahrenheit
